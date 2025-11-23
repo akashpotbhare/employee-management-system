@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 // Regular middleware for other routes
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000'],
+    origin: ['http://localhost:5173', 'http://localhost:3000', 'https://employee-management-system-hoad277z8-akashpotbhares-projects.vercel.app'],
     credentials: true
 }));
 app.use(bodyParser.json());
@@ -40,4 +40,5 @@ app.use((err, req, res, next) => {
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
+
 });
